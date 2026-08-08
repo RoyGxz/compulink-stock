@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#008dcc">
 
-<!-- Información del sitio -->
 <meta name="description" content="Catálogo de COMPULINK Moyobamba. Consulta nuestro stock, productos, laptops, impresoras, accesorios, mouse y teclados.">
 
-<!-- Vista previa al compartir -->
 <meta property="og:title" content="Catálogo de COMPULINK Moyobamba">
 <meta property="og:description" content="Consulta el catálogo, stock y productos disponibles de COMPULINK Moyobamba.">
 <meta property="og:url" content="https://roygxz.github.io/compulink-stock/">
@@ -17,7 +15,6 @@
 <meta property="og:image" content="https://roygxz.github.io/compulink-stock/logo.png">
 <meta property="og:image:alt" content="Logo de COMPULINK Moyobamba">
 
-<!-- Twitter/X -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Catálogo de COMPULINK Moyobamba">
 <meta name="twitter:description" content="Consulta el catálogo, stock y productos disponibles de COMPULINK Moyobamba.">
@@ -27,235 +24,106 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-
 html{scroll-behavior:smooth}
-
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    min-height:100vh;
-    background:linear-gradient(160deg,#00a4df 0%,#008dcc 50%,#0076b3 100%);
-    color:#fff;
-    overflow-x:hidden;
+font-family:Arial,Helvetica,sans-serif;
+min-height:100vh;
+background:linear-gradient(160deg,#00a4df 0%,#008dcc 50%,#0076b3 100%);
+color:#fff;
+overflow-x:hidden
 }
-
-.container{
-    width:100%;
-    max-width:760px;
-    margin:0 auto;
-    padding:5px 15px 30px;
-}
-
-.header{
-    width:100%;
-    text-align:center;
-    margin:0;
-    padding:0;
-}
-
+.container{width:100%;max-width:760px;margin:0 auto;padding:5px 15px 30px}
+.header{width:100%;text-align:center;margin:0;padding:0}
 .logo-container{
-    width:100%;
-    max-width:700px;
-    height:115px;
-    margin:0 auto;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
+width:100%;max-width:700px;height:115px;margin:0 auto;
+display:flex;align-items:center;justify-content:center;overflow:hidden
 }
-
 .logo-container img{
-    display:block;
-    width:455px;
-    max-width:88%;
-    height:auto;
-    object-fit:contain;
+display:block;width:455px;max-width:88%;height:auto;object-fit:contain
 }
-
-.title-box{
-    width:100%;
-    text-align:center;
-    margin-top:5px;
-    margin-bottom:15px;
-}
-
+.title-box{width:100%;text-align:center;margin-top:5px;margin-bottom:15px}
 .title-box h1{
-    font-size:clamp(21px,4vw,30px);
-    font-weight:900;
-    line-height:1.15;
-    margin-bottom:5px;
-    text-shadow:0 2px 5px rgba(0,0,0,.20);
+font-size:clamp(21px,4vw,30px);font-weight:900;line-height:1.15;
+margin-bottom:5px;text-shadow:0 2px 5px rgba(0,0,0,.20)
 }
-
-.title-box p{
-    font-size:clamp(12px,2vw,15px);
-    line-height:1.3;
-    opacity:.96;
-}
-
+.title-box p{font-size:clamp(12px,2vw,15px);line-height:1.3;opacity:.96}
 .category{
-    width:100%;
-    background:rgba(255,255,255,.97);
-    color:#222;
-    border-radius:18px;
-    padding:14px 16px;
-    margin-bottom:12px;
-    box-shadow:0 7px 20px rgba(0,0,0,.15);
-    transition:transform .2s ease,box-shadow .2s ease;
+width:100%;background:rgba(255,255,255,.97);color:#222;border-radius:18px;
+padding:14px 16px;margin-bottom:12px;box-shadow:0 7px 20px rgba(0,0,0,.15);
+transition:transform .2s ease,box-shadow .2s ease
 }
-
-.category:hover{
-    transform:translateY(-2px);
-    box-shadow:0 12px 28px rgba(0,0,0,.20);
-}
-
-.category-header{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:11px;
-}
-
+.category:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,0,0,.20)}
+.category-header{display:flex;align-items:center;gap:12px;margin-bottom:11px}
 .icon{
-    width:50px;
-    height:50px;
-    min-width:50px;
-    border-radius:14px;
-    background:#e7f7ff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:25px;
+width:50px;height:50px;min-width:50px;border-radius:14px;background:#e7f7ff;
+display:flex;align-items:center;justify-content:center;font-size:25px
 }
-
 .category-info{min-width:0}
-
-.category h2{
-    color:#0073b5;
-    font-size:clamp(18px,3vw,22px);
-    line-height:1.1;
-    margin-bottom:3px;
-}
-
-.category p{
-    color:#777;
-    font-size:clamp(11px,2vw,14px);
-    line-height:1.25;
-}
-
-.buttons{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:10px;
-}
-
+.category h2{color:#0073b5;font-size:clamp(18px,3vw,22px);line-height:1.1;margin-bottom:3px}
+.category p{color:#777;font-size:clamp(11px,2vw,14px);line-height:1.25}
+.buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .btn{
-    min-width:0;
-    min-height:47px;
-    padding:8px 12px;
-    border-radius:11px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:5px;
-    text-decoration:none;
-    text-align:center;
-    font-size:clamp(12px,2vw,14px);
-    font-weight:800;
-    line-height:1.15;
-    transition:transform .15s ease,opacity .15s ease;
+min-width:0;min-height:47px;padding:8px 12px;border-radius:11px;
+display:flex;align-items:center;justify-content:center;gap:5px;text-decoration:none;
+text-align:center;font-size:clamp(12px,2vw,14px);font-weight:800;line-height:1.15;
+transition:transform .15s ease,opacity .15s ease
 }
-
 .btn:hover{transform:translateY(-2px);opacity:.92}
 .btn:active{transform:scale(.97)}
-
-.btn-stock{
-    background:#007fc3;
-    color:#fff;
-    border:1px solid #007fc3;
-}
-
-.btn-catalogo{
-    background:#edf9ff;
-    color:#0073b5;
-    border:1px solid #b8e4f8;
-}
-
+.btn-stock{background:#007fc3;color:#fff;border:1px solid #007fc3}
+.btn-catalogo{background:#edf9ff;color:#0073b5;border:1px solid #b8e4f8}
 .single-button{width:52%}
-
 .general{
-    width:100%;
-    min-height:53px;
-    margin-top:2px;
-    padding:12px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:16px;
-    background:#fff;
-    color:#0073b5;
-    text-decoration:none;
-    text-align:center;
-    font-size:clamp(14px,2.5vw,17px);
-    font-weight:900;
-    box-shadow:0 7px 20px rgba(0,0,0,.15);
-    transition:transform .15s ease;
+width:100%;min-height:53px;margin-top:2px;padding:12px;display:flex;
+align-items:center;justify-content:center;border-radius:16px;background:#fff;
+color:#0073b5;text-decoration:none;text-align:center;
+font-size:clamp(14px,2.5vw,17px);font-weight:900;
+box-shadow:0 7px 20px rgba(0,0,0,.15);transition:transform .15s ease
 }
-
 .general:hover{transform:translateY(-2px)}
-
-footer{
-    text-align:center;
-    margin-top:20px;
-    font-size:11px;
-    line-height:1.55;
-    opacity:.96;
-}
-
+footer{text-align:center;margin-top:20px;font-size:11px;line-height:1.55;opacity:.96}
 footer strong{font-size:14px}
 .contact{margin-top:3px}
 
 @media (max-width:700px){
-    .container{padding:4px 12px 25px}
-    .logo-container{height:105px}
-    .logo-container img{width:420px;max-width:90%}
-    .single-button{width:65%}
+.container{padding:4px 12px 25px}
+.logo-container{height:105px}
+.logo-container img{width:420px;max-width:90%}
+.single-button{width:65%}
 }
-
 @media (max-width:500px){
-    .container{padding:3px 9px 22px}
-    .logo-container{height:90px}
-    .logo-container img{width:360px;max-width:92%}
-    .title-box{margin-top:4px;margin-bottom:14px}
-    .title-box h1{font-size:21px}
-    .title-box p{font-size:12px}
-    .category{padding:13px 14px;margin-bottom:10px;border-radius:16px}
-    .category-header{gap:10px;margin-bottom:10px}
-    .icon{width:45px;height:45px;min-width:45px;border-radius:12px;font-size:23px}
-    .buttons{grid-template-columns:1fr;gap:8px}
-    .btn{width:100%;min-height:44px}
-    .single-button{width:100%}
-    .general{min-height:50px;font-size:14px}
-    footer{margin-top:18px}
+.container{padding:3px 9px 22px}
+.logo-container{height:90px}
+.logo-container img{width:360px;max-width:92%}
+.title-box{margin-top:4px;margin-bottom:14px}
+.title-box h1{font-size:21px}
+.title-box p{font-size:12px}
+.category{padding:13px 14px;margin-bottom:10px;border-radius:16px}
+.category-header{gap:10px;margin-bottom:10px}
+.icon{width:45px;height:45px;min-width:45px;border-radius:12px;font-size:23px}
+.buttons{grid-template-columns:1fr;gap:8px}
+.btn{width:100%;min-height:44px}
+.single-button{width:100%}
+.general{min-height:50px;font-size:14px}
+footer{margin-top:18px}
 }
-
 @media (max-width:360px){
-    .container{padding:2px 8px 20px}
-    .logo-container{height:80px}
-    .logo-container img{width:320px;max-width:94%}
-    .title-box{margin-top:4px;margin-bottom:12px}
-    .title-box h1{font-size:19px}
-    .title-box p{font-size:11px}
-    .category{padding:12px}
-    .icon{width:42px;height:42px;min-width:42px;font-size:21px}
-    .category h2{font-size:16px}
-    .category p{font-size:11px}
-    .btn{min-height:42px;font-size:12px}
+.container{padding:2px 8px 20px}
+.logo-container{height:80px}
+.logo-container img{width:320px;max-width:94%}
+.title-box{margin-top:4px;margin-bottom:12px}
+.title-box h1{font-size:19px}
+.title-box p{font-size:11px}
+.category{padding:12px}
+.icon{width:42px;height:42px;min-width:42px;font-size:21px}
+.category h2{font-size:16px}
+.category p{font-size:11px}
+.btn{min-height:42px;font-size:12px}
 }
-
 @media (min-width:1200px){
-    .container{max-width:780px}
-    .logo-container{height:120px}
-    .logo-container img{width:470px}
+.container{max-width:780px}
+.logo-container{height:120px}
+.logo-container img{width:470px}
 }
 </style>
 </head>
@@ -264,96 +132,94 @@ footer strong{font-size:14px}
 <main class="container">
 
 <header class="header">
-    <div class="logo-container">
-        <img src="logo.png" alt="COMPULINK - Tecnología y seguridad en tus manos">
-    </div>
+<div class="logo-container">
+<img src="logo.png" alt="COMPULINK - Tecnología y seguridad en tus manos">
+</div>
 </header>
 
 <section class="title-box">
-    <h1>📦 CONSULTA DE PRODUCTOS</h1>
-    <p>Selecciona la categoría que deseas consultar</p>
+<h1>📦 CONSULTA DE PRODUCTOS</h1>
+<p>Selecciona la categoría que deseas consultar</p>
 </section>
 
 <section class="category">
-    <div class="category-header">
-        <div class="icon">🖱️</div>
-        <div class="category-info">
-            <h2>Mouse</h2>
-            <p>Stock y catálogo de mouse</p>
-        </div>
-    </div>
-    <div class="buttons">
-        <a class="btn btn-stock" href="https://drive.google.com/file/d/1BskJigKo39WinAkscP_J_oh48WXZPeAE/view?usp=sharing" target="_blank" rel="noopener noreferrer">📦 Ver Stock</a>
-        <a class="btn btn-catalogo" href="https://drive.google.com/file/d/1E9gCUNAPZXzHlIRypkeaBQEbtUUV-l99/view?usp=sharing" target="_blank" rel="noopener noreferrer">📖 Ver Catálogo</a>
-    </div>
+<div class="category-header">
+<div class="icon">🖱️</div>
+<div class="category-info">
+<h2>Mouse</h2>
+<p>Stock y catálogo de mouse</p>
+</div>
+</div>
+<div class="buttons">
+<a class="btn btn-stock" href="https://drive.google.com/file/d/1BskJigKo39WinAkscP_J_oh48WXZPeAE/view?usp=sharing" target="_blank" rel="noopener noreferrer">📦 Ver Stock</a>
+<a class="btn btn-catalogo" href="https://drive.google.com/file/d/1E9gCUNAPZXzHlIRypkeaBQEbtUUV-l99/view?usp=sharing" target="_blank" rel="noopener noreferrer">📖 Ver Catálogo</a>
+</div>
 </section>
 
 <section class="category">
-    <div class="category-header">
-        <div class="icon">⌨️</div>
-        <div class="category-info">
-            <h2>Teclados</h2>
-            <p>Stock y catálogo de teclados</p>
-        </div>
-    </div>
-    <div class="buttons">
-        <a class="btn btn-stock" href="https://drive.google.com/file/d/1VM6K8k7MBsd-GkwqDy_xCIvWHmwVCXjZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">📦 Ver Stock</a>
-        <a class="btn btn-catalogo" href="https://drive.google.com/file/d/1z_wVEyjdskBbTz7IP7GozUuO9FrtoDF4/view?usp=sharing" target="_blank" rel="noopener noreferrer">📖 Ver Catálogo</a>
-    </div>
+<div class="category-header">
+<div class="icon">⌨️</div>
+<div class="category-info">
+<h2>Teclados</h2>
+<p>Stock y catálogo de teclados</p>
+</div>
+</div>
+<div class="buttons">
+<a class="btn btn-stock" href="https://drive.google.com/file/d/1VM6K8k7MBsd-GkwqDy_xCIvWHmwVCXjZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">📦 Ver Stock</a>
+<a class="btn btn-catalogo" href="https://drive.google.com/file/d/1z_wVEyjdskBbTz7IP7GozUuO9FrtoDF4/view?usp=sharing" target="_blank" rel="noopener noreferrer">📖 Ver Catálogo</a>
+</div>
 </section>
 
 <section class="category">
-    <div class="category-header">
-        <div class="icon">💻</div>
-        <div class="category-info">
-            <h2>Laptops</h2>
-            <p>Modelos disponibles</p>
-        </div>
-    </div>
-    <div class="buttons">
-        <a class="btn btn-stock single-button" href="https://drive.google.com/file/d/1ibVVgcS2cMSZT4o3uJPqIu3HCL2NwhTf/view?usp=sharing" target="_blank" rel="noopener noreferrer">💻 Ver Laptops</a>
-    </div>
+<div class="category-header">
+<div class="icon">💻</div>
+<div class="category-info">
+<h2>Laptops</h2>
+<p>Modelos disponibles</p>
+</div>
+</div>
+<div class="buttons">
+<a class="btn btn-stock single-button" href="https://drive.google.com/file/d/1ibVVgcS2cMSZT4o3uJPqIu3HCL2NwhTf/view?usp=sharing" target="_blank" rel="noopener noreferrer">💻 Ver Laptops</a>
+</div>
 </section>
 
 <section class="category">
-    <div class="category-header">
-        <div class="icon">🖨️</div>
-        <div class="category-info">
-            <h2>Impresoras</h2>
-            <p>Impresoras disponibles</p>
-        </div>
-    </div>
-    <div class="buttons">
-        <a class="btn btn-stock single-button" href="https://drive.google.com/file/d/192ddF5-T555vRpkU__r_vvmr6_9vi0ht/view?usp=sharing" target="_blank" rel="noopener noreferrer">🖨️ Ver Impresoras</a>
-    </div>
+<div class="category-header">
+<div class="icon">🖨️</div>
+<div class="category-info">
+<h2>Impresoras</h2>
+<p>Impresoras disponibles</p>
+</div>
+</div>
+<div class="buttons">
+<a class="btn btn-stock single-button" href="https://drive.google.com/file/d/192ddF5-T555vRpkU__r_vvmr6_9vi0ht/view?usp=sharing" target="_blank" rel="noopener noreferrer">🖨️ Ver Impresoras</a>
+</div>
 </section>
 
 <section class="category">
-    <div class="category-header">
-        <div class="icon">🔌</div>
-        <div class="category-info">
-            <h2>Accesorios</h2>
-            <p>Accesorios y productos</p>
-        </div>
-    </div>
-    <div class="buttons">
-        <a class="btn btn-catalogo single-button" href="https://drive.google.com/file/d/1vsZCUMxL5SPupZReguEfcR5r-lbIH_Jy/view?usp=sharing" target="_blank" rel="noopener noreferrer">📖 Ver Accesorios</a>
-    </div>
+<div class="category-header">
+<div class="icon">🔌</div>
+<div class="category-info">
+<h2>Accesorios</h2>
+<p>Accesorios y productos</p>
+</div>
+</div>
+<div class="buttons">
+<a class="btn btn-catalogo single-button" href="https://drive.google.com/file/d/1vsZCUMxL5SPupZReguEfcR5r-lbIH_Jy/view?usp=sharing" target="_blank" rel="noopener noreferrer">📖 Ver Accesorios</a>
+</div>
 </section>
 
 <a class="general" href="https://drive.google.com/file/d/1yh5F9YdiW5iPii2V9EK7LOO4vzKRsAXy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-    📦 &nbsp; VER STOCK GENERAL
+📦 &nbsp; VER STOCK GENERAL
 </a>
 
 <footer>
-    <strong>COMPULINK - MOYOBAMBA</strong>
-    <br>
-    Tecnología y seguridad en tus manos
-    <div class="contact">
-        📍 Moyobamba - Moyobamba - San Martín
-        <br>
-        Jr. Reyes Guerra Cdra.03 - Lt.19B
-    </div>
+<strong>COMPULINK - MOYOBAMBA</strong><br>
+Tecnología y seguridad en tus manos
+<div class="contact">
+📍 Moyobamba - Moyobamba - San Martín<br>
+Jr. Reyes Guerra Cdra.03 - Lt.19B
+</div>
 </footer>
 
 </main>
